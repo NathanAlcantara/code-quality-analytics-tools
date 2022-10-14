@@ -12,5 +12,6 @@ class ExampleMutation(Mutation):
 
     def mutate(root, info, string):
         example = Example(string=string)
+
         ok = True
         return ExampleMutation(example=example, ok=ok)
